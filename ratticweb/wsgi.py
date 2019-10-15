@@ -14,6 +14,8 @@ framework.
 
 """
 import os
+import uuid
+uuid._uuid_generate_random = None
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ratticweb.settings")
 
